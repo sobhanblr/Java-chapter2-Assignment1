@@ -1,0 +1,30 @@
+//Chapter 2
+//Assignment1
+//Write  a  Java  program  to  allow  the  user  to  input  his/her  age.  Then  the  program  has  to  show 
+//whether the person is eligible to vote or not.
+import java.util.Scanner;
+public class assignment1
+{
+     public static void main(String args[])
+     {
+    	 Scanner s = new Scanner(System.in);
+         int age;
+         System.out.println("Enter Age : ");
+         age = s.nextInt();
+         //Checking if "Age" is greater than 18
+         if(age >=1 && age <=120)
+         {
+               if( age >= 18)
+               {
+               //This block will be executed only if "Age" is greater than 18
+                System.out.println("Eligible For Vote");
+               }
+           else
+              {
+        	   System.out.println("Not Eligible for Vote");	 
+              }
+         }  else
+           System.out.println("Invalid Age");
+         
+     }
+}
